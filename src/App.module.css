@@ -203,6 +203,9 @@ body {
   text-align: left;
   color: #2a2941;
 }
+p h {
+  color: red;
+}
 
 .inputs input {
   width: 702px;
