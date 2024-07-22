@@ -3,6 +3,8 @@ import React from "react";
 import styles from "./App.module.css";
 
 function App() {
+  const forma = document.querySelector("form");
+  console.log(formagit);
   const [form, setFrom] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -56,19 +58,21 @@ function App() {
   function handleForm(event) {
     event.preventDefault();
     let user = {
-      name:name,
-      email:email,
-      phone:phone,
-      country:country,
-      city:city,
-      address:address,
-      count:count,
-      description:desc
-    }
+      name: name,
+      email: email,
+      phone: phone,
+      country: country,
+      city: city,
+      address: address,
+      count: count,
+      description: desc,
+    };
 
-    let users = Setlocal()
-    users.push(user)
-    localStorage.setItem('users', JSON.stringify(users)) 
+    let users = Setlocal();
+    users.push(user);
+    localStorage.setItem("users", JSON.stringify(users));
+
+    forma.reset();
   }
 
   return (
@@ -263,16 +267,21 @@ function App() {
                 <p>
                   Izoh <h>*</h>
                 </p>
-                <textarea name="text" id={styles.comment} placeholder="Kompaniya haqida izoh qoldiring"g onChange={handleDesc}>
-                  
-                </textarea>
+                <textarea
+                  name="text"
+                  id={styles.comment}
+                  placeholder="Kompaniya haqida izoh qoldiring"
+                  onChange={handleDesc}
+                ></textarea>
               </div>
             </div>
           </div>
 
           <div className={styles.button}>
             <button className={styles.first}>ORTGA</button>
-            <button className={styles.second} onClick={handleForm}>KEYINGISI</button>
+            <button className={styles.second} onClick={handleForm}>
+              KEYINGISI
+            </button>
           </div>
         </form>
       </section>
