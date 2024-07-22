@@ -1,7 +1,429 @@
-.h2_container {
-  color: red;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.h3-container {
-    color: blue;
+.container1 {
+  max-width: 1625px;
+  width: 100%;
+  margin: auto 0px;
+}
+
+.common {
+  width: 1625px;
+  height: 1737px;
+  padding: 79px 95px 101px 90px;
+  background-color: #e5e5e5;
+  border: 1px solid #0000001a;
+  margin: 150px;
+}
+
+/* section all qismi uchun */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto 0px;
+}
+
+body {
+  margin: auto;
+  background-color: #f8f8ff;
+}
+
+/* header qismi uchun */
+
+.info {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5361e4;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.nav {
+  /* width: 1140px; */
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.nav img {
+  width: 74.42px;
+  height: 30.55px;
+  margin-right: 107.58px;
+  margin-left: 150px;
+}
+
+.nav .href {
+  width: 633px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-right: 108px;
+}
+
+.href a {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.77px;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#Til {
+  width: 66px;
+  /* height: 23px; */
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  margin-right: 38px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+#Til option {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.77px;
+  text-align: left;
+  background: #5361e4;
+}
+
+#Til .til {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.77px;
+  text-align: left;
+}
+
+.nav button {
+  border: none;
+  width: 113px;
+  height: 46px;
+  border-radius: 12px;
+  padding: 8px 24px;
+  color: #5361e4;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.nav button:hover {
+  color: #e5e5e5;
+  background: #0000001a;
+}
+
+/* section doc qismi uchun */
+
+.container2 {
+  max-width: 778px;
+  width: 100%;
+  margin: auto 0px;
+}
+
+.all .doc {
+  width: 778px;
+  height: 1271px;
+  border-radius: 24px;
+  padding: 32px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  background: #ffffff;
+  margin-left: 332px;
+}
+
+.doc .doc-info {
+  width: 702px;
+  height: 1105px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-info .for-title {
+  width: 355px;
+  height: 79px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.for-title title {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.6px;
+  text-align: left;
+  color: #2a2941;
+}
+
+.for-title .sub-title {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 20.8px;
+  text-align: left;
+  color: #b3b3b3;
+}
+
+.doc-info .space-to {
+  width: 702px;
+  height: 994px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.space-to .avatar-for {
+  width: 155px;
+  height: 84px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.avatar-for img {
+  width: 84px;
+  height: 84px;
+  cursor: pointer;
+}
+
+.avatar-for a {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.24px;
+  text-align: left;
+  color: #5361e4;
+  text-decoration: none;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 702px;
+  height: 82px;
+}
+
+.inputs .teg {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  text-align: left;
+  color: #2a2941;
+}
+
+.inputs input {
+  width: Fixed (702px) px;
+  height: Fixed (56px) px;
+  padding: 18px;
+  gap: 10px;
+  border-radius: 16px;
+  opacity: 0px;
+  border: 1px solid #e3e3e3;
+}
+
+.social {
+  width: 702px;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  text-align: left;
+  color: #2a2941;
+}
+
+.social span {
+  width: 332px;
+  height: 60px;
+  display: flex;
+  gap: 8px;
+}
+
+.social span button {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e3e3e3;
+  cursor: pointer;
+}
+
+.social span button:hover {
+  background-color: #e3e3e3;
+}
+
+.from {
+  display: flex;
+  width: 702px;
+  height: 82px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.from .country {
+  width: 341px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.country p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  text-align: left;
+  color: #2a2941;
+}
+
+.country select {
+  width: Fixed (341px) px;
+  height: Fixed (56px) px;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px;
+  text-align: start;
+  border: 1px solid #e3e3e3;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  text-align: left;
+  color: #6e6d77;
+}
+
+.inputs0 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 702px;
+  height: 80px;
+}
+
+.inputs0 .teg {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  text-align: left;
+  color: #2a2941;
+}
+
+.inputs0 input {
+  width: Fixed (702px) px;
+  height: Fixed (54px) px;
+  padding: 18px;
+  gap: 10px;
+  border-radius: 16px;
+  opacity: 0px;
+  border: 1px solid #e3e3e3;
+}
+
+.text {
+  width: Hug (702px) px;
+  height: Hug (174px) px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0px;
+}
+
+.text p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  text-align: left;
+  color: #2a2941;
+}
+
+.text textarea {
+  width: Fixed (702px) px;
+  height: Fixed (148px) px;
+  padding: 18px;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid #e3e3e3;
+  opacity: 0px;
+}
+
+.button {
+  width: 702px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button .first {
+  border: none;
+  width: Fixed (179.84px) px;
+  height: Fixed (60px) px;
+  padding: 15px 30px;
+  gap: 10px;
+  border-radius: 16px;
+  color: #6e6d77;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: all 1s;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.button .first:hover {
+  background-color: #5361e4;
+  color: aqua;
+}
+
+.button .second {
+  border: none;
+  width: Fixed (173.64px) px;
+  height: Fixed (60px) px;
+  padding: 18px 24px;
+  gap: 10px;
+  border-radius: 16px;
+  color: #ffffff;
+  background-color: #5361e4;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.24px;
+  letter-spacing: 1px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.button .second:hover {
+  background-color: aqua;
+  color: #000000;
 }
