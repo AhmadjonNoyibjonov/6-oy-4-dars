@@ -1,37 +1,32 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.container1 {
-  max-width: 1625px;
-  width: 100%;
-  margin: auto 0px;
-}
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
 
-.common {
+/* .common {
   width: 1625px;
   height: 1737px;
   padding: 79px 95px 101px 90px;
   background-color: #e5e5e5;
   border: 1px solid #0000001a;
   margin: 150px;
-}
+} */
 
-/* section all qismi uchun */
-.container {
+.container2 {
   max-width: 1440px;
   width: 100%;
-  margin: auto 0px;
+  margin: auto;
 }
 
 body {
+  padding-bottom: 50px;
   margin: auto;
   background-color: #f8f8ff;
+  font-family: "Roboto", sans-serif;
 }
-
-/* header qismi uchun */
 
 .info {
   width: 100%;
@@ -45,7 +40,6 @@ body {
 }
 
 .nav {
-  /* width: 1140px; */
   height: 46px;
   display: flex;
   align-items: center;
@@ -56,6 +50,7 @@ body {
   height: 30.55px;
   margin-right: 107.58px;
   margin-left: 150px;
+  cursor: pointer;
 }
 
 .nav .href {
@@ -79,13 +74,11 @@ body {
 
 #Til {
   width: 66px;
-  /* height: 23px; */
   border: none;
   background: transparent;
   font-size: 18px;
   margin-right: 38px;
   color: #ffffff;
-  border: none;
   outline: none;
 }
 
@@ -96,14 +89,6 @@ body {
   line-height: 22.77px;
   text-align: left;
   background: #5361e4;
-}
-
-#Til .til {
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22.77px;
-  text-align: left;
 }
 
 .nav button {
@@ -123,15 +108,7 @@ body {
   background: #0000001a;
 }
 
-/* section doc qismi uchun */
-
-.container2 {
-  max-width: 778px;
-  width: 100%;
-  margin: auto 0px;
-}
-
-.all .doc {
+.doc {
   width: 778px;
   height: 1271px;
   border-radius: 24px;
@@ -143,7 +120,7 @@ body {
   margin-left: 332px;
 }
 
-.doc .doc-info {
+.doc-info {
   width: 702px;
   height: 1105px;
   background: #ffffff;
@@ -151,7 +128,7 @@ body {
   flex-direction: column;
 }
 
-.doc-info .for-title {
+.for-title {
   width: 355px;
   height: 79px;
   display: flex;
@@ -159,7 +136,7 @@ body {
   flex-direction: column;
 }
 
-.for-title title {
+.title {
   font-family: "Roboto";
   font-size: 32px;
   font-weight: 500;
@@ -168,7 +145,7 @@ body {
   color: #2a2941;
 }
 
-.for-title .sub-title {
+.for-title h6 {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 450;
@@ -177,15 +154,16 @@ body {
   color: #b3b3b3;
 }
 
-.doc-info .space-to {
+.space-to {
   width: 702px;
   height: 994px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 12pxgit;
 }
 
-.space-to .avatar-for {
+.avatar-for {
   width: 155px;
   height: 84px;
   display: flex;
@@ -217,7 +195,7 @@ body {
   height: 82px;
 }
 
-.inputs .teg {
+.teg {
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 450;
@@ -227,12 +205,11 @@ body {
 }
 
 .inputs input {
-  width: Fixed (702px) px;
-  height: Fixed (56px) px;
+  width: 702px;
+  height: 56px;
   padding: 18px;
   gap: 10px;
   border-radius: 16px;
-  opacity: 0px;
   border: 1px solid #e3e3e3;
 }
 
@@ -284,7 +261,7 @@ body {
   gap: 20px;
 }
 
-.from .country {
+.country {
   width: 341px;
   height: 82px;
   display: flex;
@@ -302,12 +279,10 @@ body {
 }
 
 .country select {
-  width: Fixed (341px) px;
-  height: Fixed (56px) px;
+  width: 341px;
+  height: 56px;
   padding: 18px;
   border-radius: 16px;
-  border: 1px;
-  text-align: start;
   border: 1px solid #e3e3e3;
   font-family: "Roboto";
   font-size: 14px;
@@ -335,22 +310,20 @@ body {
 }
 
 .inputs0 input {
-  width: Fixed (702px) px;
-  height: Fixed (54px) px;
+  width: 702px;
+  height: 54px;
   padding: 18px;
   gap: 10px;
   border-radius: 16px;
-  opacity: 0px;
   border: 1px solid #e3e3e3;
 }
 
 .text {
-  width: Hug (702px) px;
-  height: Hug (174px) px;
-  gap: 8px;
+  width: 702px;
+  height: 174px;
   display: flex;
   flex-direction: column;
-  opacity: 0px;
+  gap: 8px;
 }
 
 .text p {
@@ -363,13 +336,12 @@ body {
 }
 
 .text textarea {
-  width: Fixed (702px) px;
-  height: Fixed (148px) px;
+  width: 702px;
+  height: 148px;
   padding: 18px;
   gap: 10px;
   border-radius: 16px;
   border: 1px solid #e3e3e3;
-  opacity: 0px;
 }
 
 .button {
@@ -382,8 +354,8 @@ body {
 
 .button .first {
   border: none;
-  width: Fixed (179.84px) px;
-  height: Fixed (60px) px;
+  width: 179.84px;
+  height: 60px;
   padding: 15px 30px;
   gap: 10px;
   border-radius: 16px;
@@ -396,7 +368,7 @@ body {
   font-weight: 500;
   line-height: 20.24px;
   letter-spacing: 1px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .button .first:hover {
@@ -406,8 +378,8 @@ body {
 
 .button .second {
   border: none;
-  width: Fixed (173.64px) px;
-  height: Fixed (60px) px;
+  width: 173.64px;
+  height: 60px;
   padding: 18px 24px;
   gap: 10px;
   border-radius: 16px;
@@ -418,7 +390,7 @@ body {
   font-weight: 500;
   line-height: 20.24px;
   letter-spacing: 1px;
-  text-align: left;
+  /* text-align: left; */
   cursor: pointer;
   transition: all 1s;
 }
@@ -426,4 +398,8 @@ body {
 .button .second:hover {
   background-color: aqua;
   color: #000000;
+}
+
+input {
+  outline: none;
 }
